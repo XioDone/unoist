@@ -1,0 +1,76 @@
+{
+  "name": "unoist",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.0.4",
+  "description": "Easy to use unocss",
+  "author": "XioDone",
+  "license": "MIT",
+  "homepage": "https://github.com/XioDone/unoist#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XioDone/unoist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XioDone/unoist/issues"
+  },
+  "keywords": [
+    "unocss",
+    "unocss utils",
+    "unocss helper",
+    "atomic-css",
+    "atomic-css-engine",
+    "tailwind",
+    "windicss"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepublishOnly": "pnpm build",
+    "tsup:build": "tsup-node",
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "dev": "pnpm tsup:build --watch",
+    "demo": "pnpm -C example run dev",
+    "release": "bumpp && npm publish",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "c": "rm pnpm-lock.yaml package-lock.json & rm -rf node_modules dist example/node_modules"
+  },
+  "peerDependencies": {
+    "vite": ">=4.0.0"
+  },
+  "dependencies": {
+    "clipboardy": "^4.0.0",
+    "consola": "^3.2.3",
+    "uqr": "^0.1.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.15.0",
+    "@types/node": "^20.12.7",
+    "bumpp": "^9.4.0",
+    "eslint": "^9.0.0",
+    "lint-staged": "^15.2.2",
+    "simple-git-hooks": "^2.11.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5",
+    "unbuild": "^2.0.0",
+    "unocss": "^0.59.4"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
