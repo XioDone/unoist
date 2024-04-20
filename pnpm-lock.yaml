@@ -8,15 +8,6 @@ importers:
 
   .:
     dependencies:
-      clipboardy:
-        specifier: ^4.0.0
-        version: 4.0.0
-      consola:
-        specifier: ^3.2.3
-        version: 3.2.3
-      uqr:
-        specifier: ^0.1.2
-        version: 0.1.2
       vite:
         specifier: '>=4.0.0'
         version: 5.2.9(@types/node@20.12.7)
@@ -31,7 +22,7 @@ importers:
         specifier: ^9.4.0
         version: 9.4.0
       eslint:
-        specifier: ^9.0.0
+        specifier: ^9.1.0
         version: 9.1.0
       lint-staged:
         specifier: ^15.2.2
