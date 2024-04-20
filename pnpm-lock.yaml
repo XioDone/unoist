@@ -42,6 +42,9 @@ importers:
       unocss:
         specifier: ^0.59.4
         version: 0.59.4(postcss@8.4.38)(rollup@3.29.4)(vite@5.2.9(@types/node@20.12.7))
+      vite-plugin-url-copy:
+        specifier: ^1.1.4
+        version: 1.1.4(vite@5.2.9(@types/node@20.12.7))
 
   example:
     devDependencies:

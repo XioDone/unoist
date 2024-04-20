@@ -54,7 +54,6 @@
   "peerDependencies": {
     "vite": ">=4.0.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "@antfu/eslint-config": "^2.15.0",
     "@types/node": "^20.12.7",
@@ -65,7 +64,8 @@
     "tsup": "^8.0.2",
     "typescript": "^5.4.5",
     "unbuild": "^2.0.0",
-    "unocss": "^0.59.4"
+    "unocss": "^0.59.4",
+    "vite-plugin-url-copy": "latest"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
