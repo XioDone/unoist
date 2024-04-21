@@ -16,7 +16,7 @@ export const docs = [
   {
     title: 'wh',
     code: 'wh-100px',
-    compiled: ['width: 100px', 'height-100px'],
+    compiled: ['width: 100px', 'height: 100px'],
     preview: 'wh-100px',
     desc: 'Width & Height',
   },
@@ -45,3 +45,10 @@ export const docs = [
     desc: 'Percent sign %',
   },
 ]
+
+export function generateSafelist() {
+  const list = docs.map(item => {
+    return item.code.split(' ')
+  })
+  return list.flat()
+}

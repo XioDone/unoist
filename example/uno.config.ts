@@ -9,6 +9,7 @@ import {
   transformerVariantGroup,
 } from 'unocss'
 import { useShortcuts } from 'unoist'
+import { generateSafelist } from './src/composables/docs'
 
 export default defineConfig({
   presets: [
@@ -66,4 +67,5 @@ export default defineConfig({
     templates: ['fs-(xs|sm|base|lg|xl|2xl|3xl|4xl|5xl|6xl|7xl|8xl|9xl)'],
   },
   transformers: [transformerDirectives(), transformerVariantGroup()],
+  safelist: generateSafelist(),
 })
