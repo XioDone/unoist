@@ -1,6 +1,5 @@
-<h1 align="center">
-<font size="1">Unoist</font>
-</h1>
+<h1 align="center">Unoist</h1>
+
 <p align="center"><img src="example/public/unoist_logo.png" width="390"/></p>
 <p align="center">
 <a href="https://github.com/XioDone/unoist" target="_blank"><img alt="Github Badge" src="https://img.shields.io/badge/Star---?logo=github&logoColor=aliceblue&labelColor=18181B&color=orange"></a>
