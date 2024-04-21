@@ -3,7 +3,7 @@ import type { ConfigBase } from 'unocss'
 export function useAttrShortcuts() {
   const shortcuts: ConfigBase['shortcuts'] = [
     // width & height
-    [/^wh-(\w+)$/, ([, num]) => `w-${num} h-${num}`],
+    [/^wh-([^>]+)$/, ([, num]) => `w-${num} h-${num}`],
     // text
     [/^(?:fs|t)-([^>]+)$/, ([, body]) => `text-${body}`],
     // !important
