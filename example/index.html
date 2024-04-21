@@ -1,13 +1,271 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unoist</title>
+    <meta name="description" content="Unoist - Easy to use UnoCss" />
+    <meta
+      name="keywords"
+      content="unoist, unocss,unocss utils,unocss helper,atomic-css,atomic-css-engine,tailwind,windicss,ui"
+    />
+    <title>Unoist - Easy to use UnoCss</title>
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+
+    <div
+      style="
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      "
+    >
+      <article>
+        <div id="readme" class="_704c034e _6d9832ac pr4-ns pl0-ns ph1-m pr3-m pr2">
+          <div class="markdown-heading">
+            <h1 align="center" class="heading-element">Unoist</h1>
+            <a
+              id="user-content-unoist"
+              class="anchor"
+              aria-label="Permalink: 
+        Unoist
+        "
+              href="#unoist"
+            >
+              <svg
+                aria-hidden="true"
+                role="img"
+                class="octicon octicon-link"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+                fill="currentColor"
+                style="display: inline-block; user-select: none; vertical-align: middle"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <p align="center">
+            <a href="https://github.com/XioDone/unoist">
+              <img
+                alt="Github Badge"
+                src="https://camo.githubusercontent.com/a60d9a8fa0c0806b603f9516a326def1900fca00ef13e640161fb4afae550658/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f537461722d2d2d3f6c6f676f3d676974687562266c6f676f436f6c6f723d616c696365626c7565266c6162656c436f6c6f723d31383138314226636f6c6f723d363143323030"
+                data-canonical-src="https://img.shields.io/badge/Star---?logo=github&amp;logoColor=aliceblue&amp;labelColor=18181B&amp;color=61C200"
+                style="max-width: 100%"
+              />
+            </a>
+            <a href="https://www.npmjs.com/package/unoist" rel="nofollow">
+              <img
+                src="https://camo.githubusercontent.com/a9b244d3faacab702440f8a60f7ec3cbe6758df22b87ba548b2ee6c6a34455c0/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f756e6f6973742e7376673f7374796c653d666c617426636f6c6f72413d31383138314226636f6c6f72423d323843463844"
+                alt="Version"
+                data-canonical-src="https://img.shields.io/npm/v/unoist.svg?style=flat&amp;colorA=18181B&amp;colorB=28CF8D"
+                style="max-width: 100%"
+              />
+            </a>
+          </p>
+          <p align="center">⚡️ Make using UnoCSS simpler and easier.</p>
+          <div class="markdown-heading">
+            <h2 class="heading-element">Install</h2>
+            <a id="user-content-install" class="anchor" aria-label="Permalink: Install" href="#install">
+              <svg
+                aria-hidden="true"
+                role="img"
+                class="octicon octicon-link"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+                fill="currentColor"
+                style="display: inline-block; user-select: none; vertical-align: middle"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="highlight highlight-source-shell"><pre tabindex="0">pnpm i unoist</pre></div>
+          <div class="markdown-heading">
+            <h2 class="heading-element">Usage</h2>
+            <a id="user-content-usage" class="anchor" aria-label="Permalink: Usage" href="#usage">
+              <svg
+                aria-hidden="true"
+                role="img"
+                class="octicon octicon-link"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+                fill="currentColor"
+                style="display: inline-block; user-select: none; vertical-align: middle"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <ul>
+            <li>
+              Configure ESM as default in
+              <code>package.json</code>
+              , it's up to you
+            </li>
+          </ul>
+          <div class="highlight highlight-source-json">
+            <pre tabindex="0">{
+          <span class="pl-ent">"type"</span>: <span class="pl-s"><span class="pl-pds">"</span>module<span class="pl-pds">"</span></span>
+        }</pre>
+          </div>
+          <ul>
+            <li>
+              Add shortcuts to your
+              <code>uno.config.ts</code>
+            </li>
+          </ul>
+          <div class="highlight highlight-source-ts">
+            <pre
+              tabindex="0"
+            ><span class="pl-k">import</span> <span class="pl-kos">{</span> <span class="pl-s1">useShortcuts</span> <span class="pl-kos">}</span> <span class="pl-k">from</span> <span class="pl-s">'unoist'</span>
+        <span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-en">defineConfig</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+          <span class="pl-c1">shortcuts</span>: <span class="pl-kos">[</span>
+            <span class="pl-c">// Your config ...</span>
+            ...<span class="pl-en">useShortcuts</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">,</span>
+          <span class="pl-kos">]</span><span class="pl-kos">,</span>
+        <span class="pl-kos">}</span><span class="pl-kos">)</span></pre>
+          </div>
+          <div class="markdown-heading">
+            <h2 class="heading-element">recommendations plugins</h2>
+            <a
+              id="user-content-recommendations-plugins"
+              class="anchor"
+              aria-label="Permalink: recommendations plugins"
+              href="#recommendations-plugins"
+            >
+              <svg
+                aria-hidden="true"
+                role="img"
+                class="octicon octicon-link"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+                fill="currentColor"
+                style="display: inline-block; user-select: none; vertical-align: middle"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="https://www.npmjs.com/package/vite-plugin-url-copy" rel="nofollow">vite-plugin-url-copy</a>
+              - Auto copy the Vite server URL and generate a QR code for easy access during dev or preview.
+            </li>
+          </ul>
+          <div class="markdown-heading">
+            <h2 class="heading-element">License</h2>
+            <a id="user-content-license" class="anchor" aria-label="Permalink: License" href="#license">
+              <svg
+                aria-hidden="true"
+                role="img"
+                class="octicon octicon-link"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+                fill="currentColor"
+                style="display: inline-block; user-select: none; vertical-align: middle"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <p>
+            <a href="https://github.com/XioDone/unoist/blob/HEAD/LICENSE">MIT</a>
+            License © 2024-PRESENT
+            <a href="https://github.com/XioDone">XioDone</a>
+          </p>
+        </div>
+      </article>
+      <div class="pv4">
+        <h2 class="c7520c26">Readme</h2>
+        <h3 id="user-content-keywords" class="a0dff0b1 mt2 pt2 mb3 pb3 f4 fw6 b--black-10">Keywords</h3>
+        <ul class="list pl0">
+          <li class="dib mr2">
+            <a
+              class="_75a5f581 f4 fw6 fl db pv1 ma1 black-70 link hover-black animate"
+              href="/search?q=keywords:unocss"
+            >
+              unocss
+            </a>
+          </li>
+          <li class="dib mr2">
+            <a
+              class="_75a5f581 f4 fw6 fl db pv1 ma1 black-70 link hover-black animate"
+              href="/search?q=keywords:unocss utils"
+            >
+              unocss utils
+            </a>
+          </li>
+          <li class="dib mr2">
+            <a
+              class="_75a5f581 f4 fw6 fl db pv1 ma1 black-70 link hover-black animate"
+              href="/search?q=keywords:unocss helper"
+            >
+              unocss helper
+            </a>
+          </li>
+          <li class="dib mr2">
+            <a
+              class="_75a5f581 f4 fw6 fl db pv1 ma1 black-70 link hover-black animate"
+              href="/search?q=keywords:atomic-css"
+            >
+              atomic-css
+            </a>
+          </li>
+          <li class="dib mr2">
+            <a
+              class="_75a5f581 f4 fw6 fl db pv1 ma1 black-70 link hover-black animate"
+              href="/search?q=keywords:atomic-css-engine"
+            >
+              atomic-css-engine
+            </a>
+          </li>
+          <li class="dib mr2">
+            <a
+              class="_75a5f581 f4 fw6 fl db pv1 ma1 black-70 link hover-black animate"
+              href="/search?q=keywords:tailwind"
+            >
+              tailwind
+            </a>
+          </li>
+          <li class="dib mr2">
+            <a
+              class="_75a5f581 f4 fw6 fl db pv1 ma1 black-70 link hover-black animate"
+              href="/search?q=keywords:windicss"
+            >
+              windicss
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
