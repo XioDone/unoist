@@ -1,10 +1,12 @@
 <h1 align="center">
-Unoist
+<font size="1">Unoist</font>
 </h1>
-
+<p align="center"><img src="example/public/unoist_logo.png" width="390"/></p>
 <p align="center">
-<a href="https://github.com/XioDone/unoist" target="_blank"><img alt="Github Badge" src="https://img.shields.io/badge/Star---?logo=github&logoColor=aliceblue&labelColor=18181B&color=61C200"></a>
+<a href="https://github.com/XioDone/unoist" target="_blank"><img alt="Github Badge" src="https://img.shields.io/badge/Star---?logo=github&logoColor=aliceblue&labelColor=18181B&color=orange"></a>
 <a href="https://www.npmjs.com/package/unoist" target="_blank"><img src="https://img.shields.io/npm/v/unoist.svg?style=flat&colorA=18181B&colorB=28CF8D" alt="Version"></a>
+<a href="https://unoist.vercel.app" target="_blank"><img src="https://img.shields.io/badge/Docs-4D9375"></a>
+
 </p>
 
 <p align="center">⚡️ Make using UnoCSS simpler and easier.</p>
