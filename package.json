@@ -2,7 +2,7 @@
   "name": "unoist",
   "type": "module",
   "version": "0.0.3",
-  "packageManager": "pnpm@9.1.2",
+  "packageManager": "pnpm@9.1.4",
   "description": "Make using UnoCSS simpler and easier.",
   "author": "XioDone",
   "license": "MIT",
@@ -52,11 +52,11 @@
     "c": "rm pnpm-lock.yaml package-lock.json & rm -rf node_modules dist example/node_modules"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.18.1",
-    "@types/node": "^20.12.12",
+    "@antfu/eslint-config": "^2.19.1",
+    "@types/node": "^20.12.13",
     "bumpp": "^9.4.1",
     "eslint": "^9.3.0",
-    "lint-staged": "^15.2.4",
+    "lint-staged": "^15.2.5",
     "simple-git-hooks": "^2.11.1",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5",
