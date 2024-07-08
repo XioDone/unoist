@@ -50,7 +50,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "up": "bunx taze latest -rI",
-    "c": "rm -rf node_modules dist example/node_modules pnpm-lock.yaml package-lock.json"
+    "c": "rm -rf node_modules dist example/node_modules pnpm-lock.yaml package-lock.json bun.lockb"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.2",
