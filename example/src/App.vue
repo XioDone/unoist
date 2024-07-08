@@ -9,7 +9,16 @@
       <p fs-xl pt-5>
         Make using UnoCSS simpler and easier.
       </p>
-      <a href="https://github.com/XioDone/unoist" target="_blank" rel="noopener noreferrer nofollow" absolute top-10 right-10>
+      <a
+        href="https://github.com/XioDone/unoist"
+        target="_blank"
+        aria-label="github page"
+        title="github page"
+        rel="noopener noreferrer nofollow"
+        absolute
+        top-10
+        right-10
+      >
         <svg
           width="26"
           height="26"
