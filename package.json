@@ -6,7 +6,7 @@
   "description": "Make using UnoCSS simpler and easier.",
   "author": "XioDone",
   "license": "MIT",
-  "homepage": "https://github.com/XioDone/unoist#readme",
+  "homepage": "https://github.com/XioDone/eslint-config",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/XioDone/unoist.git"
@@ -53,8 +53,9 @@
     "c": "rm -rf node_modules dist example/node_modules pnpm-lock.yaml package-lock.json bun.lockb"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.21.2",
+    "@antfu/eslint-config": "^2.22.0",
     "@types/node": "^20.14.10",
+    "@xiodone/eslint-config": "^1.0.0",
     "bumpp": "^9.4.1",
     "eslint": "^9.6.0",
     "lint-staged": "^15.2.7",
